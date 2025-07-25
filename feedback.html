@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+{% block title %}Feedback | PyXtract{% endblock %}
+
+{% block content %}
+<div class="row justify-content-center mt-5">
+  <div class="col-md-6">
+    <h2 class="text-center mb-4">💬 Send Us Your Feedback</h2>
+
+    <form method="POST">
+      <div class="mb-3">
+        <label for="name" class="form-label">Your Name</label>
+        <input type="text" name="name" id="name" class="form-control" required>
+      </div>
+
+      <div class="mb-3">
+        <label for="message" class="form-label">Your Message</label>
+        <textarea name="message" id="message" class="form-control" rows="4" required></textarea>
+      </div>
+
+      <button type="submit" class="btn btn-warning w-100">📨 Submit Feedback</button>
+    </form>
+
+    <div class="text-center mt-3">
+      <a href="{{ url_for('home') }}" class="text-decoration-none">← Back to Home</a>
+    </div>
+  </div>
+</div>
+{% endblock %}

@@ -1,0 +1,82 @@
+{% extends "base.html" %}
+{% block title %}Welcome | PyXtract{% endblock %}
+{% block content %}
+
+<!-- Hero Section -->
+<section class="py-5 text-center bg-light">
+  <div class="container py-5">
+    <h1 class="display-4 fw-bold">Welcome to PyXtract</h1>
+    <p class="lead mb-4">Extract. Summarize. Translate — All in one place.</p>
+    <a href="{{ url_for('index') }}" class="btn btn-primary btn-lg px-5 py-3">
+      🚀 Start Extracting
+    </a>
+  </div>
+</section>
+
+<!-- Features Section -->
+<section class="py-5">
+  <div class="container">
+    <h2 class="text-center mb-4">Features</h2>
+    <div class="row g-4 text-center">
+      <div class="col-md-4">
+        <div class="card shadow-sm h-100">
+          <div class="card-body">
+            <h5 class="card-title">Summarize</h5>
+            <p class="card-text">Generate concise summaries from large documents quickly and accurately.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card shadow-sm h-100">
+          <div class="card-body">
+            <h5 class="card-title">Convert</h5>
+            <p class="card-text">Easily convert files between formats like PDF, DOCX, TXT, and more.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card shadow-sm h-100">
+          <div class="card-body">
+            <h5 class="card-title">Translate</h5>
+            <p class="card-text">Translate your files into multiple global languages with high accuracy.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Testimonials Section -->
+<section class="py-5 bg-light">
+  <div class="container">
+    <h2 class="text-center mb-4">What People Are Saying</h2>
+    <div class="row text-center">
+      <div class="col-md-4">
+        <div class="card border-0 shadow-sm">
+          <div class="card-body">
+            <p class="card-text">“PyXtract helped me summarize 100+ pages of reports in minutes!”</p>
+            <h6 class="card-subtitle text-muted">— Anjali R., Data Analyst</h6>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card border-0 shadow-sm">
+          <div class="card-body">
+            <p class="card-text">“The translation tool is a life-saver for my international clients.”</p>
+            <h6 class="card-subtitle text-muted">— Rahul S., Freelancer</h6>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card border-0 shadow-sm">
+          <div class="card-body">
+            <p class="card-text">“I love the clean UI and simple file conversion tools. Great job!”</p>
+            <h6 class="card-subtitle text-muted">— Priya T., Teacher</h6>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% endblock %}
